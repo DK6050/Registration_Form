@@ -10,11 +10,7 @@ const port = process.env.PORT || 3000;
 
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
-// unrbmch
-mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.di4i29j.mongodb.net/registrationFormDB`,{
-    useNewUrlParser : true,
-    useUnifiedTopology : true,
-});
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.di4i29j.mongodb.net/registrationFormDB`);
 
 //registration Schema
 const registrationSchema = new mongoose.Schema({
